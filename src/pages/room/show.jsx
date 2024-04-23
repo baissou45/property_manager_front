@@ -20,7 +20,7 @@ export default function RoomShow() {
             <h3 className='text-white' style={{ position: "absolute", bottom: 0, right: 20 }}> { room.hotel.name } </h3>
         </div>
 
-        <div className="card text-left mt-4 mx-5">
+        <div className="card text-left m-4 mx-5">
           <div className="card-body row">
 
             <div className="col-12 col-md-6">
@@ -49,7 +49,7 @@ export default function RoomShow() {
           </div>
         </div>
 
-        <div className="card text-left mt-3 mx-5">
+        <div className="card text-left my-3 mx-5">
           <div className="card-body">
             <p className='mt-3'>
               { room.description }

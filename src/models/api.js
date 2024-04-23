@@ -2,7 +2,8 @@ import axios from "axios";
 import { Auth } from "./auth";
 
 export class Api {
-    static url = "http://localhost:8000/api/";
+    // static url = "http://localhost:8000/api/";
+    static url = "http://api-property-manager.businesspiers.com/api/";
 
     static async get(url, auth = false) {
 

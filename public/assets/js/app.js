@@ -9,11 +9,13 @@
     "use strict";
 
     var MainApp = function () {
+        console.log("hi");
+
         this.$body = $("body"),
-            this.$wrapper = $("#wrapper"),
-            this.$btnFullScreen = $("#btn-fullscreen"),
-            this.$leftMenuButton = $('.button-menu-mobile'),
-            this.$menuItem = $('.has_sub > a')
+        this.$wrapper = $("#wrapper"),
+        this.$btnFullScreen = $("#btn-fullscreen"),
+        this.$leftMenuButton = $('.button-menu-mobile'),
+        this.$menuItem = $('.has_sub > a')
     };
     //scroll
     MainApp.prototype.initSlimscroll = function () {

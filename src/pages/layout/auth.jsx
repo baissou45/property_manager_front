@@ -9,7 +9,6 @@ const AuthLayout = ({ children, title }) => {
         <div className="content">
           <TopBar title={title} />
 
-
           <div className="page-content-wrapper">
             {children}
           </div>

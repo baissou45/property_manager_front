@@ -21,22 +21,6 @@ export default function RoomIndex() {
     setRooms(data);
   }
 
-  const schroll_top_style = {
-    position: "fixed",
-    bottom: "10px",
-    right: "10px",
-    borderRadius: "10px",
-    textAlign: "center",
-    cursor: "pointer"
-  }
-
-  const scholl_to_top = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-
   return (
       <div className="position-relative">
         {/* <div className="schroll-top card bg-primary shadow" style={ schroll_top_style } onClick={scholl_to_top}> */}
@@ -53,7 +37,7 @@ export default function RoomIndex() {
                 <div className="form-group col-12 col-md-4">
                   <label htmlFor="type">Room Type</label>
                   <select className="form-control" name="type" id='type'>
-                    <option value="Single King bed">Choose the type of room</option>
+                    <option value="">Choose the type of room</option>
                     <option value="Single King bed">Single King bed </option>
                     <option value="Double Queens bed">Double Queens bed </option>
                     <option value="Queen bed">Queen bed </option>

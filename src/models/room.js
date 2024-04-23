@@ -1,4 +1,6 @@
 import { Api } from "./api";
+import { Auth } from "./auth";
+import axios from "axios";
 
 export class Room {
     constructor(id, hotel, number, type, price, description, image) {
@@ -57,6 +59,19 @@ export class Room {
     static get_by_id = async (id) => {
         let datas = await Api.get("rooms/" + id, true);
         return Room.fromObject(datas.data.data);
+    }
+
+    static create = async (data) => {
+        const authData = Auth.authData();
+
+        const datas = await axios.post(Api.url + "rooms", data, {
+            headers: {
+                'Authorization' : "Bearer " + authData.token,
+                'Content-Type' : 'multipart/form-data'
+            }
+        });
+
+        return datas;
     }
 
 }
